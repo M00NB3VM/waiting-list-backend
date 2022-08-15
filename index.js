@@ -44,6 +44,8 @@ let waiting = [];
  * color: string
  */
 
+app.use(cors());
+
 io.on("connection", async (socket) => {
   console.log("A user connected");
 
