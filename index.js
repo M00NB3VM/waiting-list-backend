@@ -10,7 +10,7 @@ const knex = require("./db");
 const io = new Server(server, {
   cors: {
     origin: "https://cme-saga-waitinglist.herokuapp.com/",
-    methods: "GET", "POST", "DELETE"
+    methods: ["GET", "POST", "DELETE"]
   },
 });
 
